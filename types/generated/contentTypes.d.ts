@@ -549,10 +549,15 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    category: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    currency: Schema.Attribute.String;
+    date: Schema.Attribute.DateTime;
     description: Schema.Attribute.Text;
+    featured: Schema.Attribute.Boolean;
+    keyInsights: Schema.Attribute.JSON;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -560,15 +565,21 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    pages: Schema.Attribute.Integer;
     picture: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
     price: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
+    region: Schema.Attribute.String;
+    shortDescription: Schema.Attribute.String;
+    tableOfContents: Schema.Attribute.JSON;
+    type: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatIncludes: Schema.Attribute.JSON;
   };
 }
 

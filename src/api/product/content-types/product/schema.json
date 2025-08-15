@@ -29,6 +29,39 @@
         "videos",
         "audios"
       ]
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "keyInsights": {
+      "type": "json"
+    },
+    "tableOfContents": {
+      "type": "json"
+    },
+    "whatIncludes": {
+      "type": "json"
     }
   }
 }
