@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visitors",
+  "info": {
+    "singularName": "visitor",
+    "pluralName": "visitors",
+    "displayName": "visitor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "region": {
+      "type": "text"
+    },
+    "ip": {
+      "type": "text"
+    },
+    "userAgent": {
+      "type": "text"
+    },
+    "language": {
+      "type": "text"
+    }
+  }
+}
